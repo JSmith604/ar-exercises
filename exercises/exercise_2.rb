@@ -12,6 +12,11 @@ puts "----------"
 @store1 = Store.find_by(name: "Burnaby")
 
 @store1.update(name: "Yaletown")
+
+newStore = Store.find_by(name: "Yaletown", annual_revenue: 300000)
+
+newStore.update(name: "Kits")
+
 @store2 = Store.find_by(name: "Richmond")
 
 
